@@ -4,10 +4,18 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
-function
+function name_string(name) {
+    let namestring = ''
+    for (let i = 0; i < name.length; i++) {
+        const char = name[i]
+        namestring += char
+    }
+    return namestring
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(name_string(userName));
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
