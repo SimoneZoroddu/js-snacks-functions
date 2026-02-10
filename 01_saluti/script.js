@@ -5,12 +5,12 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 function name_string(name) {
-    let namestring = ''
+    let namestring = '' // si puo mettere anche qua ciao facendo 
     for (let i = 0; i < name.length; i++) {
         const char = name[i]
         namestring += char
     }
-    return namestring
+    return `ciao ${namestring}`
 }
 
 // Invoca la funzione qui e stampa il risultato in console
