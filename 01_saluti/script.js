@@ -13,6 +13,10 @@ function name_string(name) {
     return `ciao ${namestring}`
 }
 
+// correzzione
+
+
+
 // Invoca la funzione qui e stampa il risultato in console
 
 console.log(name_string(userName));

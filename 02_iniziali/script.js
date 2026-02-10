@@ -6,14 +6,16 @@ console.log(names);
 
 // Dichiara la funzione qui.
 function start_array(array) {
-    let  single_name = []
-    for (let i = 0; i < array.length; i++) {
-        const single_array = array[i];
-        single_name.push(single_array)
-    }
+    // let  single_name = []
+    // for (let i = 0; i < array.length; i++) {
+    //     const single_array = array[i];
+    //     single_name.push(single_array)
+    // }
+    // console.log(single_name);
+    
     let start_char = []
-    for (let i = 0; i < single_name.length; i++) {
-        const single_char = single_name[i];
+    for (let i = 0; i < array.length; i++) {
+        const single_char = array[i];
         start_char.push(single_char[0])
     }
     return start_char

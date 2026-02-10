@@ -20,9 +20,9 @@ function name_char(array) {
 // console.log(name_char(names));
 
 /// penso si puo fare anche con 2 funzioni una per l array e una per il carattere
+// Ho creato 2 funzioni che non siano collegate ad una variabile cosi che siano a se per questo ho messo let ArrayForChar invece di names
 
-
-/// divido i vari elementi dentro larray
+/// divido i vari elementi dentro l array
 function name_array(array) {
     let single_name = []
     for (let i = 0; i < array.length; i++) {
@@ -34,18 +34,17 @@ function name_array(array) {
 
 //console.log(name_array(names));
 //creo una variabile con dentro la function e l array specificato
-let prova = name_array(names)
+let ArrayForChar = name_array(names)
 
 //creo una funzione che cerca solo la lettera che voglio
 function char_in_names(char) {
     let single_char = []
-    for (let i = 0; i < prova.length; i++) {
-        const element = prova[i];  
-        if (element.indexOf(char) + 1) { //// +1 perche indexof partendo da 0 da falso
-            single_char.push(element)
+    for (let i = 0; i < ArrayForChar.length; i++) {
+        const single_array_char = ArrayForChar[i];  
+        if (single_array_char.indexOf(char) + 1) { //// +1 perche indexof partendo da 0 da falso
+            single_char.push(single_array_char)
         }
     }
-
     return single_char
 }
 
