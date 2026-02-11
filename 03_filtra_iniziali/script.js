@@ -55,3 +55,22 @@ console.log(char_in_names('A'));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+// correzzione
+/*
+const names_2 = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
+
+function filterNamesByInitial(names, initial) {
+    const filteredNames = []
+    for (let i = 0; i < names.length; i++) {
+        const name = names[i];
+        if (name[0] == initial) {
+            filteredNames.push(name)
+        }
+    }
+    return filteredNames
+}
+
+console.log(filterNamesByInitial(names_2, 'A'));
+*/
+//correzzione finita

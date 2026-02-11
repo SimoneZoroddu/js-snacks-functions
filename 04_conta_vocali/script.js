@@ -58,3 +58,4 @@ console.log(vocal(word_2));
 
 
 // console.log(single_vocal);
+
